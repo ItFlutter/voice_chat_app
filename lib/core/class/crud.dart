@@ -8,7 +8,7 @@ import 'package:voice_chat_app/core/functions/check_internet.dart';
 
 String _basicAuth = 'Basic ${base64Encode(utf8.encode('ahmad:ahmad12345'))}';
 
-// Map<String, String> myheaders = {'authorization': _basicAuth};
+Map<String, String> myheaders = {'authorization': _basicAuth};
 
 class Crud {
   Future<Either<StatusRequest, Map>> postData(String linkurl, Map data) async {

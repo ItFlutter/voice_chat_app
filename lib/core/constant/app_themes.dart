@@ -1,7 +1,9 @@
 import "package:flutter/material.dart";
 import 'app_colors.dart';
 
-ThemeData darkTheme = ThemeData.dark().copyWith(
+ThemeData darkTheme = ThemeData.light().copyWith(
+  focusColor: Colors.yellow,
+  colorScheme: ColorScheme.fromSwatch().copyWith(primary: Color(0xff000000)),
   appBarTheme: const AppBarTheme(
     backgroundColor: AppColors.transparent,
     centerTitle: true,
